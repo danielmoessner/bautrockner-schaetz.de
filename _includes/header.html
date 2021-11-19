@@ -1,0 +1,26 @@
+<link href="css/style.css" rel="stylesheet"/>
+<header>
+	<div class="header-line">
+		<img src="img/logo_schaetz.png"/>
+		<h2>Ihr Partner für München <br>und Umgebung</h2>
+	</div>
+	<nav id="header-nav">
+		<ul>
+			<li id="hotline-spacer"><span>Hotline: 089 1498080</span></li>
+			<a href="index.html"><li>Startseite</li></a>
+			<a href="index.html#über-uns"><li>Über Uns</li></a>
+			<a href="products.html"><li>Geräte</li></a>
+			<a href="contact.html"><li>Kontakt</li></a>
+			<li id="hotline"><span>Hotline: 089 1498080</span></li>
+		</ul>
+		<div class="handle">Menu</div>
+	</nav>
+</header>
+<script type="text/javascript">
+	$(".handle").on("click", function(){
+		$("nav ul").toggleClass("showing");
+	});
+	$("header nav ul li").on("click", function(){
+		$("nav ul").toggleClass("showing");
+	});
+</script>

@@ -1,0 +1,134 @@
+body{
+	background-image: url("../img/Haus.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+}
+#cmain{
+	width: 80%; 
+	max-width: 1280px;
+	margin:auto;
+}
+#cmain .top-left, #cmain .top-right, #cmain .mid, #cmain .bot, #cmain .hidden-mid{
+	background-color: #f4d942;
+	padding: 10px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+#cmain .top h3{
+	margin-bottom: 1%;
+}
+#cmain .top p{
+	color: black;
+}
+#cmain .top{
+	display: flex;
+	margin-top: 40px; 
+}
+#cmain .top .top-left, #cmain .top .top-right{
+	width: 49.875%;
+	height: inherit;
+	align-items: stretch;
+}
+#cmain .top .top-left{
+	margin-right: .125%;
+}
+#cmain .top .top-right{
+	margin-left: .125%;
+}
+#cmain .top .location{
+	margin-right: 10%;
+	margin-bottom: 10px;
+}
+#cmain .top .location, #cmain .phone-number, #cmain .reservation{
+	display: inline-block;
+	vertical-align: text-top;
+	text-align: justify;
+}
+#cmain .mid{
+	margin: 40px auto;
+}
+#cmain .mid iframe{
+	width: 100%;
+}
+#cmain .mid img{
+	float: right;
+	width: 34%;
+	display: none;
+}
+#cmain .bot{
+	margin: 40px auto;
+}
+#cmain .bot .input-div *{
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 34px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin-bottom: 8px;
+	font-family: "Hind", sans-serif;
+	padding-left: 4px;
+	font-size: 90%;
+}
+#cmain .bot textarea{
+	height: 150px!important;
+	font-size: 100%;
+}
+#cmain .hidden-mid{
+	display: none;
+	margin-bottom: 40px;
+}
+@media screen and (max-width: 600px){
+	#cmain *{
+		text-align: center!important;
+	}
+	#cmain{
+		width: 94%;
+	}
+	#cmain .top h3{
+		margin-top: 20px;
+	}
+	#cmain .top{
+		display: initial;
+	}
+	
+	#cmain .top .top-left, #cmain .top .top-right{
+		width: 100%;
+		margin: 0 auto;
+		float: initial;
+	}
+	#cmain .top .location{
+		margin-right: 0;
+	}
+	#cmain .top .top-left{
+		margin-top: 40px;
+	}
+	#cmain .mid{
+		display: none;
+	}
+	#cmain .hidden-mid{
+		display: initial;
+	}
+}
+@media screen and (max-width: 1150px){
+	#cmain .mid img{
+		display: none;
+	}
+	#cmain .mid iframe{
+		width: 100%;
+	}
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #444444;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #444444;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #444444;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #444444;
+}

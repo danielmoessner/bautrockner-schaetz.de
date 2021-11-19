@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /mail_service.php
+
+User-agent: * 
+Disallow: /mail_service/
